@@ -5,8 +5,8 @@ title: Chromasolver - ZTGK 2019 Contest
 
 A logic game where player uses color gun to manipulate world elements.
 <p align="middle">
-  <img src="/images/transparency1.jpg" width="49%" />
-  <img src="/images/rotation1.jpg" width="49%" /> 
+  <img src="/images/chromasolver1.jpg" width="49%" />
+  <img src="/images/chromasolver2.jpg" width="49%" /> 
 </p>
 
 In a group of 4 students we created a game about an astronaut whose ship crashed. He finds mysterious gun that shoots bullets in 3 main colors (red, yellow an blue). He must solve a set of riddles and explore to find a way home. My role was to code the game logic.
