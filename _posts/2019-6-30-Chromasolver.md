@@ -3,7 +3,7 @@ layout: post
 title: Chromasolver - ZTGK 2019 Contest
 ---
 
-A logic game where player uses color gun to manipulate world elements.
+[*Unity, C#*] A logic game where player uses color gun to manipulate world elements.
 <p align="middle">
   <img src="/images/chromasolver1.png" width="49%" />
   <img src="/images/chromasolver2.png" width="49%" /> 
