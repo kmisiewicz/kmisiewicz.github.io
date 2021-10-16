@@ -3,7 +3,7 @@ layout: post
 title: Using Selected Gaze Parameters To Interact With Vitrual Environments - Master's Thesis
 ---
 
-The goal of my thesis was to present possible use cases for gaze direction to adjust
+[*Unity, C#, VR*] The goal of my thesis was to present possible use cases for gaze direction to adjust
 the context of the scene in a virtual reality game used for eye therapy. Two solutions
 of this kind were described.
 <p align="middle">
