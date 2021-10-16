@@ -11,7 +11,7 @@ title: Freeze Them All - Internship in Fabryka Gier
 
 Game was created during internship as a programmer in Fabryka Gier in July 2019.
 
-To win you need to defeat 3 bosses with different attack patterns. You also need to watch out for minion crabs that attack you or your base.
+To win you need to defeat 3 bosses with different attack patterns. You also need to watch out for minion crabs that attack you or your base. You can play solo or in split-screen local coop mode.
 
 <p align="middle">
   <img src="/images/frozen2.png" width="49%" />
