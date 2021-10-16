@@ -24,9 +24,9 @@ User can change the rotation of both or single eyeballs with a joystick.
 <iframe src="https://player.vimeo.com/video/536036091" width="640" height="370" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ### Transparency Demo
-First film shows how the transparency of fire is changed. Basically, if user looks at it but can't extinguish it, the visibility for the strong eye is increased. Otherwise it is decreased to challenge the weak eye.
+First film shows how the transparency of fire is changed. Basically, if user looks at it but can't extinguish it, the visibility for the strong eye is increased. Otherwise it is decreased to challenge the weak eye. Effect was achieved with a shader created in Shader Graph.
 <iframe src="https://player.vimeo.com/video/585315631" width="640" height="370" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 ### Camera Rotation Demo
-Second film shows how the camera can follow the eye that deviates from correct eye vergence. After initial rotation, camera tries to slowly direct the eye towards desired position. White rays show where eyes are looking.
+Second film shows how the camera can follow the eye that deviates from correct eye vergence. After initial rotation, camera tries to slowly direct the eye towards desired position. White rays show where eyes are looking. Seperate camera rotation was achieved by editing the view matrix (*Camera.SetStereoViewMatrix()*).
 <iframe src="https://player.vimeo.com/video/585316231" width="640" height="370" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
