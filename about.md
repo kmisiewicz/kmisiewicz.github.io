@@ -8,8 +8,8 @@ Some information about you!
 
 ### More Information
 
-A place to include any other types of information that you'd like to include about yourself.
+Just finished my master's. Looking for a job in gamedev.
 
 ### Contact me
 
-[email@domain.com](mailto:email@domain.com)
+[k.misiewicz97@gmail.com](mailto:k.misiewicz97@gmail.com)
