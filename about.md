@@ -4,11 +4,9 @@ title: About
 permalink: /about/
 ---
 
-Some information about you!
+Just finished my master's. Looking for a job in gamedev. Most of my project were done in Unity.
 
-### More Information
-
-Just finished my master's. Looking for a job in gamedev.
+Currently working on a solo VR game.
 
 ### Contact me
 
