@@ -5,8 +5,8 @@ title: Freeze Them All - Internship in Fabryka Gier
 
 Bullet hell with snowmen as main characters. Their task is to revert global warming by throwing snowballs at everything.
 <p align="middle">
-  <img src="/images/frozen0.jpg" width="49%" />
-  <img src="/images/frozen1.jpg" width="49%" /> 
+  <img src="/images/frozen0.png" width="49%" />
+  <img src="/images/frozen1.png" width="49%" /> 
 </p>
 
 ![frozen2]({{ site.baseurl }}/images/frozen2.png)
