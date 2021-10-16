@@ -6,7 +6,6 @@ title: Using Selected Gaze Parameters To Interact With Vitrual Environments - Ma
 The goal of my thesis was to present possible use cases for gaze direction to adjust
 the context of the scene in a virtual reality game used for eye therapy. Two solutions
 of this kind were described.
-
 <p align="middle">
   <img src="/images/transparency1.jpg" width="49%" />
   <img src="/images/rotation1.jpg" width="49%" /> 
