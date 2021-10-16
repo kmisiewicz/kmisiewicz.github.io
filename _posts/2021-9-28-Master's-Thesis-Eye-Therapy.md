@@ -3,7 +3,9 @@ layout: post
 title: Using Selected Gaze Parameters To Interact With Vitrual Environments - Master's Thesis
 ---
 
-![_config.yml]({{ site.baseurl }}/images/config.png)
+<p align="middle">
+  <img src="images/rotation1.jpg" width="49%" />
+</p>
 
 The goal of my thesis was to present possible use cases for gaze direction to adjust
 the context of the scene in a virtual reality game used for eye therapy. Two solutions
