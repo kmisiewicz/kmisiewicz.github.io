@@ -16,5 +16,8 @@ In order to demonstrate these solutions a fireman game prototype was implemented
 simulator was wrought. The goal of the thesis was accomplished through the conducted
 assessment of discussed methods.
 
-### Transparency Test
-<iframe src="https://player.vimeo.com/video/585316231" width="640" height="564" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+### Transparency Demo
+<iframe src="https://player.vimeo.com/video/585315631" width="640" height="380" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+### Camera Rotation Demo
+<iframe src="https://player.vimeo.com/video/585316231" width="640" height="380" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
