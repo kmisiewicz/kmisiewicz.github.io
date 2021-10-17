@@ -4,10 +4,7 @@ title: VR Character Controller for XR Interaction Toolkit
 ---
 
 [*Unity, C#, VR*] My first shot at creating a custom Unity package.
-<p align="middle">
-  <img src="/images/oswald1.png" width="49%" />
-  <img src="/images/oswald2.png" width="49%" /> 
-</p>
+<iframe src="https://player.vimeo.com/video/634590129" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 After finishing the project for my thesis which is aimed at people with visual impairments I decided to create an actual game. I started with a character controller.
 I decided to use Unity's XR Interaction Toolkit. With help of some tutorials I created this package. It is still incomplete (especially in terms of documentation), 
