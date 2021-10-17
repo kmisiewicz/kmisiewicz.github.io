@@ -13,14 +13,23 @@ After finishing the project for my thesis which is aimed at people with visual i
 I decided to use Unity's XR Interaction Toolkit. With help of some tutorials I created this package. It is still incomplete (especially in terms of documentation), 
 but it can already be imported via Package Manager with a git link.
 
-#### Current features
+### Current features
 
 1. Artificial movement methods (Locomotion Providers) based on scripts 
 [provided in XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@1.0/manual/locomotion.html)
 (which don't contain all functionalities I wanted).
-  - Continuous Movement and Turn with Vignete Effect (as post process) to help with motion sickness,
+  - Continuous Movement and Turn with vignete effect (as post process) to help with motion sickness,
   - Snap Turn with blinking (fading screen to black as custom renderer feature),
-  - Teleportation with blinking and final rotation 
+  - Teleportation with blinking and rotation change (rotate the joystick on a controller do determine your final position),
+2. Player avatar:
+  - based on Rigidbody (so I can use AddForce()) with Capsule Collider which follows player's height in playspace
+  - another Sphere Collider for the head (so that camera doesn't clip through objects) with support for leaning - player can lean over small obstacles but only a certain distance from body. 
+
+#### Soon to be added
+
+- Demo scene,
+- Walking on stairs (although for VR slopes might be better),
+- Climbing.
 
 ### Repository
 Repository for this project is available [here](https://github.com/kmisiewicz/vr-controller-xrit).
