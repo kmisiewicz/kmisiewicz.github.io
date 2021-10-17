@@ -12,5 +12,7 @@ title: Oswald Adventure
 Description
 
 ### Repository
+Repository for this project can be found [here](https://github.com/szywiatrzyk/OswaldAdventure).
 
 ### Build
+A build of the game can be downloaded [here](https://drive.google.com/file/d/1wnHDCkwEy4X4_nqru0pBRMZM763elPkB/view?usp=sharing).
