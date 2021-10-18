@@ -19,6 +19,9 @@ to rotate the view for one eye and to slowly guide it to correct position.
 In order to demonstrate these solutions a fireman game prototype was implemented using Unity game engine. Specifically for testing purposes a simple eye movement
 simulator was wrought. The goal of the thesis was accomplished through the conducted assessment of discussed methods.
 
+### Repository
+Repository for this project is available [here](https://gitfront.io/r/kmisiewicz/9bdf2b5bd79f0dce2cb1f1e5c2bd69a451da7956/eye-therapy-2/).
+
 ### Simple Eye Simulation Demo
 User can change the rotation of both or single eyeballs with a joystick.
 <iframe src="https://player.vimeo.com/video/536036091" width="640" height="370" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
