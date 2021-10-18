@@ -14,7 +14,7 @@ but it can already be imported via Package Manager with a git link.
 
 1. Artificial movement methods (Locomotion Providers) based on scripts 
 [provided in XR Interaction Toolkit](https://docs.unity3d.com/Packages/com.unity.xr.interaction.toolkit@1.0/manual/locomotion.html)
-(which don't contain all functionalities I wanted).
+(which doesn't contain all functionalities I wanted).
   - Continuous Movement and Turn with vignete effect (as post process) to help with motion sickness,
   - Snap Turn with blinking (fading screen to black as custom renderer feature),
   - Teleportation with blinking and rotation change (rotate the joystick on a controller do determine your final position),
