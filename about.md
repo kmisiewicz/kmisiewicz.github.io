@@ -4,9 +4,8 @@ title: About
 permalink: /about/
 ---
 
-Just graduated and I'm looking for a job. 
-
-Most of my project were done in Unity. Currently I'm working on a VR game.
+Working as a Unity developer.
+In my spare time I'm working on a VR game.
 
 ### Contact me
 
