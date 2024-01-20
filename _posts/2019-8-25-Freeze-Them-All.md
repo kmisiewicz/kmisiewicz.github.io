@@ -1,6 +1,6 @@
 ---
 layout: post
-title: Freeze Them All - Internship in Fabryka Gier
+title: Freeze Them All - Internship at Fabryka Gier
 ---
 
 [*Unity, C#*] Bullet hell with snowmen as main characters. Their task is to revert global warming by throwing snowballs at everything.
@@ -9,7 +9,7 @@ title: Freeze Them All - Internship in Fabryka Gier
   <img src="/images/frozen1.png" width="49%" /> 
 </p>
 
-Game was created during internship as a programmer in Fabryka Gier in July 2019.
+Game was created during internship as a programmer at Fabryka Gier in July 2019.
 
 To win you need to defeat 3 bosses with different attack patterns. You also need to watch out for minion crabs that attack you or your base. You can play solo or in split-screen local coop mode.
 
