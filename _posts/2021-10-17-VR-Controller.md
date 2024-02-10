@@ -12,8 +12,7 @@ With help of some tutorials and original source code I created this package.
 It is still unfinished in a lot of aspects, but it can be imported in Package Manager via [git link](https://github.com/kmisiewicz/vr-controller-xrit.git).
 
 
-##### Update [10/02/2024]
-The XR Interaction Toolkit has changed a lot since this package was created. It now contains features like tunneling vignette and climbing.
+*Update 10/02/2024:* The XR Interaction Toolkit has changed a lot since this package was created. It now contains features like tunneling vignette and climbing.
 
 
 ### Features
