@@ -4,7 +4,7 @@ title: VR Character Controller for XR Interaction Toolkit
 ---
 
 [*Unity, C#, VR*] My shot at extending Unity's own XR Interactions Toolkit capabilities.
-<iframe src="https://player.vimeo.com/video/634590129" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+<iframe src="https://player.vimeo.com/video/634590129" width="640" height="360" align="middle" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
 After finishing the project for my thesis which is aimed at people with visual impairments I wanted to create an actual game.
 I decided to once again use Unity's XR Interaction Toolkit. I started with a character controller which I found to be lacking a lot of functionalities people know from VR games.
