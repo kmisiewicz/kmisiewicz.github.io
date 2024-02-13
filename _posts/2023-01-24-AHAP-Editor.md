@@ -8,7 +8,7 @@ title: Advanced Haptics Pattern Editor Window
   <img src="/images/haptic-editor3.png" />
 </p>
 
-After starting work as a mobile games developer I was once assigned the task to handle vibrations.
+During my work as a mobile games developer I was once assigned the task to handle vibrations.
 I learned about the possibilities of enhancing gameplay with haptic feedback, especially on iPhones which have superior haptic motors compared to most Android phones.
 Apple even introduced a special file format for controlling amplitude and frequency of vibrations called AHAP (which is just a fancy JSON).
 Inspired by tools like Lofelt Studio (not available anymore) and Haptrix (only on macOS) I created a tool to edit these assets directly in Unity in my spare time.
@@ -40,7 +40,7 @@ Repository for this project is available [here](https://github.com/kmisiewicz/ah
 To check (or rather to feel) if the output makes any sense I coded a simple app that downloads sounds and AHAP files from given links and allows their playback.
 <p align="middle" height="370">
   <img src="/images/haptic-editor-demo.png" />
-</p
+</p>
 Link to [app](https://drive.google.com/file/d/15bP5vrFZ6KeukNqaUvbdZuFFocj69RnJ/view?usp=drive_link).
 Test sound and vibration files are available under QR codes below (QR code reader included in app).
 <p align="middle">
