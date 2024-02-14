@@ -5,7 +5,7 @@ title: Unity Timeline as enemy waves controller
 
 [*Unity, C#*] Proof of concept using Unity Timeline as level design tool for orchestrating enemy waves spawns.
 <p align="middle">
-  <img src="/images/timeline-enemies1.png" width="80%" /> 
+  <img src="/images/timeline-enemies1.png" /> 
 </p>
 
 I wanted to check if Unity's Timeline could be used for something more than cinematic sequences.
