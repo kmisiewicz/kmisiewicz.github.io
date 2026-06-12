@@ -241,6 +241,10 @@ nav {
 // .main
 //
 
+.posts {
+  columns: 412px 2;
+}
+
 .posts > .post {
   padding-bottom: 2em;
   border-bottom: 1px solid $lightGray;
