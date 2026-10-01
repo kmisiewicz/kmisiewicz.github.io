@@ -1,0 +1,24 @@
+{%- comment -%}
+  Side-by-side images.
+  {% include gallery.html images="shot1.png, shot2.png" caption="Optional caption" alt="Optional alt text" %}
+  Bare file names resolve to /images/; paths starting with "/" or full URLs are used as given.
+{%- endcomment -%}
+{%- assign gallery_images = include.images | split: ',' -%}
+<figure class="gallery gallery--{{ gallery_images.size }}">
+  <div class="gallery__grid">
+    {%- for raw in gallery_images -%}
+      {%- assign src = raw | strip -%}
+      {%- assign first_char = src | slice: 0 -%}
+      {%- if src contains '://' -%}
+      {%- elsif first_char == '/' -%}
+        {%- assign src = src | relative_url -%}
+      {%- else -%}
+        {%- assign src = src | prepend: '/images/' | relative_url -%}
+      {%- endif -%}
+    <img src="{{ src }}" alt="{{ include.alt | default: include.caption | default: page.title | escape }}">
+    {%- endfor -%}
+  </div>
+  {%- if include.caption -%}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif -%}
+</figure>

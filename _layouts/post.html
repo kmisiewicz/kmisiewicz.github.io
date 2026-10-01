@@ -1,15 +1,52 @@
 ---
 layout: default
 ---
-
 <article class="post">
-  <h1>{{ page.title }}</h1>
+  <header class="post-header container container--narrow">
+    <a class="back-link" href="{{ '/' | relative_url }}#projects">{% include icon.html name="arrow-left" %}All projects</a>
+    <h1 class="post-title">{{ page.title }}</h1>
+    <div class="post-meta">
+      <time datetime="{{ page.date | date_to_xmlschema }}">{{ page.date | date: '%-d %B %Y' }}</time>
+      {%- if page.wip -%}<span class="badge badge--inline">WIP</span>{%- endif -%}
+      {%- if page.tags.size > 0 -%}
+      <ul class="tags">
+        {%- for tag in page.tags -%}<li><a class="tag" href="{{ '/' | relative_url }}#tag={{ tag | uri_escape | replace: '#', '%23' }}">{{ tag }}</a></li>{%- endfor -%}
+      </ul>
+      {%- endif -%}
+    </div>
+    {%- if page.description -%}
+    <p class="post-lead">{{ page.description }}</p>
+    {%- endif -%}
+    {%- if page.build or page.repo -%}
+    <div class="post-actions">
+      {%- if page.build -%}
+      <a class="btn btn--primary" href="{{ page.build }}">{% include icon.html name="download" %}Download build</a>
+      {%- endif -%}
+      {%- if page.repo -%}
+      <a class="btn" href="{{ page.repo }}">{% include icon.html name="code" %}Repository</a>
+      {%- endif -%}
+    </div>
+    {%- endif -%}
+  </header>
 
-  <div class="entry">
+  <div class="prose container container--narrow">
     {{ content }}
   </div>
 
-  <div class="date">
-    Written on {{ page.date | date: "%d/%m/%Y" }}
-  </div>
+  {%- if page.next or page.previous -%}
+  <nav class="post-nav container container--narrow" aria-label="More projects">
+    {%- if page.next -%}
+    <a class="post-nav__link post-nav__link--newer" href="{{ page.next.url | relative_url }}">
+      <span class="post-nav__label">{% include icon.html name="arrow-left" %}Newer project</span>
+      <span class="post-nav__title">{{ page.next.title }}</span>
+    </a>
+    {%- endif -%}
+    {%- if page.previous -%}
+    <a class="post-nav__link post-nav__link--older" href="{{ page.previous.url | relative_url }}">
+      <span class="post-nav__label">Older project{% include icon.html name="arrow-right" %}</span>
+      <span class="post-nav__title">{{ page.previous.title }}</span>
+    </a>
+    {%- endif -%}
+  </nav>
+  {%- endif -%}
 </article>

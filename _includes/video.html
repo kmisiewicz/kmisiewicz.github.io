@@ -1,0 +1,28 @@
+{%- comment -%}
+  Responsive 16:9 video. Pass exactly one source:
+  {% include video.html vimeo="342792919" %}
+  {% include video.html youtube="5QajDu9X1_w" %}
+  {% include video.html file="/videos/clip.mp4" %}      (self-hosted)
+  {% include video.html src="https://any/embed/url" %}  (any other embed)
+  Optional: title="..." caption="..."
+{%- endcomment -%}
+{%- assign video_title = include.title | default: page.title | escape -%}
+<figure class="embed">
+  <div class="embed__frame">
+    {%- if include.file -%}
+    <video src="{{ include.file | relative_url }}" controls preload="metadata" playsinline title="{{ video_title }}"></video>
+    {%- else -%}
+      {%- if include.youtube -%}
+        {%- capture video_src -%}https://www.youtube-nocookie.com/embed/{{ include.youtube }}{%- endcapture -%}
+      {%- elsif include.vimeo -%}
+        {%- capture video_src -%}https://player.vimeo.com/video/{{ include.vimeo }}?dnt=1{%- endcapture -%}
+      {%- else -%}
+        {%- assign video_src = include.src -%}
+      {%- endif -%}
+    <iframe src="{{ video_src }}" title="{{ video_title }}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" allowfullscreen></iframe>
+    {%- endif -%}
+  </div>
+  {%- if include.caption -%}
+  <figcaption>{{ include.caption }}</figcaption>
+  {%- endif -%}
+</figure>

@@ -1,0 +1,18 @@
+{%- assign s = site.socials -%}
+<ul class="social {{ include.class }}">
+  {%- if s.github -%}
+  <li><a href="https://github.com/{{ s.github }}" aria-label="GitHub" title="GitHub">{% include icon.html name="github" %}</a></li>
+  {%- endif -%}
+  {%- if s.linkedin -%}
+  <li><a href="https://www.linkedin.com/in/{{ s.linkedin }}" aria-label="LinkedIn" title="LinkedIn">{% include icon.html name="linkedin" %}</a></li>
+  {%- endif -%}
+  {%- if s.youtube -%}
+  <li><a href="https://www.youtube.com/{{ s.youtube }}" aria-label="YouTube" title="YouTube">{% include icon.html name="youtube" %}</a></li>
+  {%- endif -%}
+  {%- if s.soundcloud -%}
+  <li><a href="https://soundcloud.com/{{ s.soundcloud }}" aria-label="SoundCloud" title="SoundCloud">{% include icon.html name="soundcloud" %}</a></li>
+  {%- endif -%}
+  {%- if s.email -%}
+  <li><a href="mailto:{{ s.email }}" aria-label="Email" title="Email">{% include icon.html name="mail" %}</a></li>
+  {%- endif -%}
+</ul>

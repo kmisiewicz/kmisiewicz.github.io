@@ -1,0 +1,23 @@
+// Dark Rouge theme for fenced code blocks.
+
+.highlight {
+  color: #e6edf3;
+
+  .c, .c1, .cm, .cs, .cp, .cpf { color: #8b949e; font-style: italic; }
+  .k, .kc, .kd, .kn, .kp, .kr, .kv { color: #ff7b72; }
+  .kt { color: #ffa657; }
+  .s, .s1, .s2, .sa, .sb, .sc, .sd, .se, .sh, .si, .sx, .sr, .ss { color: #a5d6ff; }
+  .m, .mb, .mf, .mh, .mi, .mo, .il { color: #79c0ff; }
+  .nf, .fm { color: #d2a8ff; }
+  .nc, .nn, .ne { color: #ffa657; }
+  .nt { color: #7ee787; }
+  .na, .nv, .vi, .vc, .vg { color: #79c0ff; }
+  .nb, .bp { color: #ffa657; }
+  .no { color: #79c0ff; }
+  .o, .ow { color: #ff7b72; }
+  .p { color: #c9d1d9; }
+  .err { color: #f85149; }
+  .gd { color: #ffa198; background: rgba(248, 81, 73, 0.12); }
+  .gi { color: #7ee787; background: rgba(46, 160, 67, 0.15); }
+  .gh, .gu { color: #79c0ff; font-weight: 600; }
+}

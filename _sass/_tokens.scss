@@ -1,0 +1,50 @@
+// Accent palettes, selected with `accent:` in _config.yml.
+// Each entry: accent color, text color used on top of a solid accent fill.
+$palettes: (
+  "cyan":    #22d3ee #042f36,
+  "violet":  #a78bfa #1e1240,
+  "amber":   #fbbf24 #2a1d02,
+  "rose":    #fb7185 #3a0a14,
+  "lime":    #a3e635 #1a2a05,
+  "emerald": #34d399 #032b1e
+);
+
+@mixin accent($accent, $on-accent) {
+  --accent: #{$accent};
+  --accent-soft: #{rgba($accent, 0.12)};
+  --accent-line: #{rgba($accent, 0.45)};
+  --accent-glow: #{rgba($accent, 0.2)};
+  --on-accent: #{$on-accent};
+}
+
+:root {
+  --bg: #0b0e14;
+  --surface: #121722;
+  --surface-2: #1a2130;
+  --border: #1f2633;
+  --border-strong: #2c3546;
+  --text: #e6e9ef;
+  --muted: #9aa4b2;
+  --faint: #6b7585;
+
+  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+
+  --radius: 14px;
+  --radius-sm: 8px;
+  --container: 1120px;
+  --prose: 760px;
+  --gutter: 16px;
+  --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
+
+  @include accent(#22d3ee, #042f36);
+}
+
+@each $name, $colors in $palettes {
+  [data-accent="#{$name}"] {
+    @include accent(nth($colors, 1), nth($colors, 2));
+  }
+}
+
+$mobile: 640px;
+$tablet: 900px;

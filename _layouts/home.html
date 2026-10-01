@@ -1,0 +1,50 @@
+---
+layout: default
+---
+<section class="hero">
+  <div class="container">
+    <p class="eyebrow">{{ site.tagline }}</p>
+    <h1 class="hero__title">{{ site.headline }}</h1>
+    <p class="hero__intro">{{ site.intro }}</p>
+    <div class="hero__actions">
+      <a class="btn btn--primary" href="#projects">View projects</a>
+      <a class="btn" href="{{ '/about/' | relative_url }}">About me</a>
+      {%- include social.html class="hero__social" -%}
+    </div>
+  </div>
+</section>
+
+<section class="container projects" id="projects">
+  <div class="projects__head">
+    <h2>Projects</h2>
+    <span class="projects__count">{{ site.posts.size }}</span>
+  </div>
+
+  {%- comment -%}
+    Tags sorted by number of projects (most first), then by name.
+    Keys look like "988|11|Unity", where 988 = 999 - count so an ascending sort puts big counts first.
+  {%- endcomment -%}
+  {%- assign tag_keys = '' -%}
+  {%- for tag in site.tags -%}
+    {%- assign rank = 999 | minus: tag[1].size | prepend: '000' | slice: -3, 3 -%}
+    {%- assign tag_keys = tag_keys | append: rank | append: '|' | append: tag[1].size | append: '|' | append: tag[0] | append: '~~' -%}
+  {%- endfor -%}
+  {%- assign tag_keys = tag_keys | split: '~~' | sort -%}
+
+  <div class="filters" role="group" aria-label="Filter projects by tag" data-filters hidden>
+    <button type="button" class="chip" data-tag="" aria-pressed="true">All</button>
+    {%- for key in tag_keys -%}
+      {%- assign parts = key | split: '|' -%}
+    <button type="button" class="chip" data-tag="{{ parts[2] | escape }}" aria-pressed="false">{{ parts[2] }}<span class="chip__count">{{ parts[1] }}</span></button>
+    {%- endfor -%}
+  </div>
+
+  <div class="grid">
+    {%- for post in site.posts -%}
+      {%- include project-card.html post=post -%}
+    {%- endfor -%}
+  </div>
+  <p class="grid__empty" data-empty hidden>No projects with this tag yet.</p>
+</section>
+
+{{ content }}
