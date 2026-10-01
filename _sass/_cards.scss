@@ -13,7 +13,6 @@
 
 .hero__title {
   max-width: 16ch;
-  margin-top: 14px;
   font-size: unquote("clamp(2.2rem, 3.5vw + 1.2rem, 3.6rem)"); // unquote: Ruby Sass would try to add vw and rem
   line-height: 1.08;
   letter-spacing: -0.035em;
@@ -24,18 +23,6 @@
   margin-top: 20px;
   color: var(--muted);
   font-size: 1.125rem;
-}
-
-.hero__actions {
-  display: flex;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 12px;
-  margin-top: 32px;
-}
-
-.hero__social {
-  margin-left: 4px;
 }
 
 // Project list

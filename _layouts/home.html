@@ -3,14 +3,8 @@ layout: default
 ---
 <section class="hero">
   <div class="container">
-    <p class="eyebrow">{{ site.tagline }}</p>
     <h1 class="hero__title">{{ site.headline }}</h1>
     <p class="hero__intro">{{ site.intro }}</p>
-    <div class="hero__actions">
-      <a class="btn btn--primary" href="#projects">View projects</a>
-      <a class="btn" href="{{ '/about/' | relative_url }}">About me</a>
-      {%- include social.html class="hero__social" -%}
-    </div>
   </div>
 </section>
 

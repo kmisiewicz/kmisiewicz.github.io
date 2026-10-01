@@ -49,6 +49,13 @@ img {
   height: auto;
 }
 
+// Embedded players use a light color scheme; matching it keeps the iframe
+// transparent instead of the browser painting an opaque white backdrop
+// (visible as white bars around videos that aren't 16:9).
+iframe {
+  color-scheme: light;
+}
+
 a {
   color: var(--accent);
   text-decoration: none;
@@ -112,14 +119,6 @@ button {
   flex: none;
 }
 
-.eyebrow {
-  color: var(--accent);
-  font-size: 14px;
-  font-weight: 600;
-  letter-spacing: 0.08em;
-  text-transform: uppercase;
-}
-
 .btn {
   display: inline-flex;
   align-items: center;
@@ -150,6 +149,28 @@ button {
   &:hover {
     color: var(--on-accent);
     filter: brightness(1.1);
+  }
+}
+
+.btn--outline {
+  border-color: var(--accent-line);
+  background: var(--accent-soft);
+  color: var(--accent);
+
+  &:hover {
+    border-color: var(--accent);
+  }
+}
+
+.btn--lg {
+  gap: 10px;
+  height: 52px;
+  padding: 0 26px;
+  font-size: 16.5px;
+
+  .icon {
+    width: 20px;
+    height: 20px;
   }
 }
 

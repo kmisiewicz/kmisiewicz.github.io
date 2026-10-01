@@ -20,10 +20,10 @@ layout: default
     {%- if page.build or page.repo -%}
     <div class="post-actions">
       {%- if page.build -%}
-      <a class="btn btn--primary" href="{{ page.build }}">{% include icon.html name="download" %}Download build</a>
+      <a class="btn btn--primary btn--lg" href="{{ page.build }}">{% include icon.html name="download" %}Download build</a>
       {%- endif -%}
       {%- if page.repo -%}
-      <a class="btn" href="{{ page.repo }}">{% include icon.html name="code" %}Repository</a>
+      <a class="btn btn--outline btn--lg" href="{{ page.repo }}">{% include icon.html name="code" %}Repository</a>
       {%- endif -%}
     </div>
     {%- endif -%}

@@ -63,28 +63,7 @@ Videos are embedded responsively at 16:9:
 Everything site-wide lives in `_config.yml`:
 
 - `accent` sets the accent palette: `cyan`, `violet`, `amber`, `rose`, `lime` or `emerald`.
-- `tagline`, `headline` and `intro` set the home page hero text.
+- `headline` and `intro` set the home page hero text. `tagline` appears in the home page's browser-tab title.
 - `socials` sets the icon links in the header, hero and footer. Leave a value empty to hide that icon.
 
 Palettes are defined in `_sass/_tokens.scss`. To add one, add a line to the `$palettes` map.
-
-## Local preview
-
-You need Ruby 3.3 with DevKit (`winget install RubyInstallerTeam.RubyWithDevKit.3.3`) and a local `Gemfile` (it's gitignored):
-
-```ruby
-source "https://rubygems.org"
-
-gem "github-pages", group: :jekyll_plugins
-gem "webrick"
-gem "tzinfo-data"
-```
-
-Then:
-
-```bash
-bundle install
-bundle exec jekyll serve --livereload
-```
-
-The site is served at http://localhost:4000. GitHub Pages builds from `master` with the same `github-pages` gem, so what you see locally is what gets published.

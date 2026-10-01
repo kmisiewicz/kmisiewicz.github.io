@@ -3,7 +3,7 @@
 # ---------------------------------------------------------------------------
 
 title: Krzysztof Misiewicz
-tagline: Unity Developer
+tagline: Unity Developer # used in the home page browser-tab title
 description: Portfolio of Krzysztof Misiewicz, a Unity developer building games, editor tools and VR projects.
 url: https://kmisiewicz.github.io
 baseurl: ""
@@ -14,13 +14,13 @@ author:
   name: Krzysztof Misiewicz
 
 # Home page hero
-headline: Games, editor tools and VR experiments
+headline: My portfolio
 intro: >-
-  I'm a Unity developer with over 4 years of commercial experience on PC and mobile games.
-  Below are projects, tools and experiments I've built along the way.
+  I'm a Unity Developer with almost 5 years of commercial experience building PC and mobile games.
+  Here are some projects I created in my free time.
 
 # Accent palette: cyan, violet, amber, rose, lime, emerald
-accent: cyan
+accent: violet
 
 # Icon links in the header, hero and footer. Leave a value empty to hide it.
 socials:
@@ -58,7 +58,6 @@ defaults:
 
 exclude:
   - README.md
-  - LICENSE
   - CNAME
   - Gemfile
   - Gemfile.lock

@@ -1,5 +1,5 @@
 ---
-title: Using Selected Gaze Parameters To Interact With Vitrual Environments - Master's Thesis
+title: Using Selected Gaze Parameters To Interact With Virtual Environments - Master's Thesis
 description: The goal of my thesis was to present possible use cases for gaze direction to adjust the context of the scene in a virtual reality game used for eye therapy. Two solutions of this kind were described.
 tags: [Unity, C#, VR]
 image: /images/transparency1.jpg
