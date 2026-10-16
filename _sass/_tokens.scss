@@ -1,24 +1,29 @@
 // Accent palettes, selected with `accent:` in _config.yml.
 // Each entry: accent color, text color used on top of a solid accent fill.
+// Accents stay below 80% saturation so they sit with the neutrals instead of glaring.
+// assets/favicon.svg repeats these colors; update it when changing a palette.
 $palettes: (
-  "cyan":    #22d3ee #042f36,
-  "violet":  #a78bfa #1e1240,
-  "amber":   #fbbf24 #2a1d02,
-  "rose":    #fb7185 #3a0a14,
-  "lime":    #a3e635 #1a2a05,
+  "cyan":    #49cbdf #042f36,
+  "violet":  #a790ef #1e1240,
+  "amber":   #e9b93e #2a1d02,
+  "rose":    #ee7789 #3a0a14,
+  "lime":    #a4d94e #1a2a05,
   "emerald": #34d399 #032b1e
 );
 
-@mixin accent($accent, $on-accent) {
+// $accent-2 is a second, neighbouring hue used only in background glows.
+@mixin accent($accent, $on-accent, $accent-2: $accent) {
   --accent: #{$accent};
   --accent-soft: #{rgba($accent, 0.12)};
   --accent-line: #{rgba($accent, 0.45)};
   --accent-glow: #{rgba($accent, 0.2)};
+  --accent-2-glow: #{rgba($accent-2, 0.14)};
   --on-accent: #{$on-accent};
 }
 
 :root {
   --bg: #0b0e14;
+  --bg-glass: rgba(11, 14, 20, 0.75);
   --surface: #121722;
   --surface-2: #1a2130;
   --border: #1f2633;
@@ -27,23 +32,49 @@ $palettes: (
   --muted: #9aa4b2;
   --faint: #6b7585;
 
-  --font-sans: "Inter", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
-  --font-mono: "JetBrains Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
+  --font-sans: "Geist", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
+  --font-mono: "Geist Mono", ui-monospace, SFMono-Regular, Consolas, monospace;
 
   --radius: 14px;
   --radius-sm: 8px;
+  --radius-xs: 5px;
   --container: 1120px;
-  --prose: 760px;
+  --prose: 620px;
   --gutter: 16px;
   --ease: cubic-bezier(0.2, 0.7, 0.2, 1);
 
-  @include accent(#22d3ee, #042f36);
+  @include accent(#49cbdf, #042f36);
+
+  // Solid accent surfaces and the hero headline; palettes with two hues override these with gradients.
+  --accent-fill: var(--accent);
+  --title-fill: var(--text);
 }
 
 @each $name, $colors in $palettes {
   [data-accent="#{$name}"] {
     @include accent(nth($colors, 1), nth($colors, 2));
   }
+}
+
+// Teal: lime-green accent paired with cyan, on green-tinted neutrals instead of the default blue-black.
+// Brighter than the other palettes on purpose, and the only one that blends two hues.
+[data-accent="teal"] {
+  @include accent(#7be35c, #0c2a05, #35d6f2);
+
+  --accent-glow: rgba(123, 227, 92, 0.26);
+  --accent-2-glow: rgba(53, 214, 242, 0.24);
+  --accent-fill: linear-gradient(100deg, #7be35c, #35d6f2);
+  --title-fill: linear-gradient(100deg, #b9f5a3 0%, #7be35c 35%, #35d6f2 100%);
+
+  --bg: #0a0f0e;
+  --bg-glass: rgba(10, 15, 14, 0.75);
+  --surface: #111816;
+  --surface-2: #18211f;
+  --border: #1d2826;
+  --border-strong: #2a3835;
+  --text: #e4ece9;
+  --muted: #97a8a3;
+  --faint: #677873;
 }
 
 $mobile: 640px;
