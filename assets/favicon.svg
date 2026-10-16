@@ -1,0 +1,12 @@
+---
+---
+{%- case site.accent -%}
+  {%- when 'violet' -%}{%- assign fill = '#a790ef' -%}{%- assign ink = '#1e1240' -%}
+  {%- when 'amber' -%}{%- assign fill = '#e9b93e' -%}{%- assign ink = '#2a1d02' -%}
+  {%- when 'rose' -%}{%- assign fill = '#ee7789' -%}{%- assign ink = '#3a0a14' -%}
+  {%- when 'lime' -%}{%- assign fill = '#a4d94e' -%}{%- assign ink = '#1a2a05' -%}
+  {%- when 'emerald' -%}{%- assign fill = '#34d399' -%}{%- assign ink = '#032b1e' -%}
+  {%- when 'teal' -%}{%- assign fill = '#7be35c' -%}{%- assign ink = '#0c2a05' -%}
+  {%- else -%}{%- assign fill = '#49cbdf' -%}{%- assign ink = '#042f36' -%}
+{%- endcase -%}
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64"><rect width="64" height="64" rx="16" fill="{{ fill }}"/><text x="32" y="45" text-anchor="middle" font-family="Segoe UI, Helvetica, Arial, sans-serif" font-size="38" font-weight="700" fill="{{ ink }}">K</text></svg>

@@ -19,8 +19,8 @@ intro: >-
   I'm a Unity Developer with almost 5 years of commercial experience building PC and mobile games.
   Here are some projects I created in my free time.
 
-# Accent palette: cyan, violet, amber, rose, lime, emerald
-accent: violet
+# Accent palette: cyan, violet, amber, rose, lime, emerald, teal
+accent: teal
 
 # Icon links in the header, hero and footer. Leave a value empty to hide it.
 socials:

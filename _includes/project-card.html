@@ -1,5 +1,5 @@
 {%- assign post = include.post -%}
-<article class="card" data-tags="|{{ post.tags | join: '|' | escape }}|">
+<article class="card{% if include.featured %} card--featured{% endif %}" data-tags="|{{ post.tags | join: '|' | escape }}|">
   <a class="card__link" href="{{ post.url | relative_url }}">
     <div class="card__cover">
       {%- if post.image -%}

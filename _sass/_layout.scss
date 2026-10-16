@@ -5,7 +5,7 @@
   top: 0;
   z-index: 10;
   border-bottom: 1px solid var(--border);
-  background: rgba(11, 14, 20, 0.75);
+  background: var(--bg-glass);
   -webkit-backdrop-filter: saturate(140%) blur(12px);
   backdrop-filter: saturate(140%) blur(12px);
 }
@@ -34,7 +34,7 @@
     width: 34px;
     height: 34px;
     border: 2px solid var(--accent);
-    border-radius: 50%;
+    border-radius: 10px;
     object-fit: cover;
   }
 }
@@ -69,6 +69,10 @@
       background: var(--surface-2);
       color: var(--text);
       text-decoration: none;
+    }
+
+    &:active {
+      background: var(--border-strong);
     }
   }
 }
